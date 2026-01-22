@@ -219,11 +219,11 @@
             gap: 0.5rem;
             background: var(--gradient-1);
             color: #000;
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
         }
 
@@ -246,11 +246,11 @@
             gap: 0.5rem;
             background: transparent;
             color: var(--text-primary);
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             border: 1px solid var(--border);
             transition: all 0.2s ease;
         }
@@ -1005,14 +1005,14 @@
                     <span class="demo-dot yellow"></span>
                     <span class="demo-dot green"></span>
                 </div>
-                <div class="demo-placeholder">
-                    <div class="play-button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="5 3 19 12 5 21 5 3"/>
-                        </svg>
-                    </div>
-                    <p class="demo-text">See Florida Lawyer AI in action</p>
-                </div>
+                <video
+                    controls
+                    preload="metadata"
+                    style="width: 100%; display: block;"
+                    poster="">
+                    <source src="/promo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
@@ -1324,6 +1324,7 @@
             <a href="#">Terms of Service</a>
             <a href="#">Privacy Policy</a>
             <a href="mailto:support@fllawyer.ai">Contact</a>
+            <a href="https://www.linkedin.com/company/floridalawyer" target="_blank">LinkedIn</a>
         </div>
         <p>© 2025 Florida Lawyer AI</p>
     </footer>
