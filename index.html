@@ -232,6 +232,14 @@
             box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
         }
 
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3), 0 0 40px rgba(16, 185, 129, 0.15);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.4), 0 0 60px rgba(16, 185, 129, 0.2), 0 10px 30px rgba(16, 185, 129, 0.2);
+        }
+
         .btn-secondary {
             display: inline-flex;
             align-items: center;
@@ -518,6 +526,93 @@
             height: 6px;
             background: var(--accent);
             border-radius: 50%;
+        }
+
+        /* Comparison */
+        .comparison {
+            padding: 8rem 2rem;
+        }
+
+        .comparison-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin: 3rem 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead th {
+            padding: 1.5rem 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            background: var(--bg-tertiary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table thead th.highlight-col {
+            background: var(--gradient-2);
+            color: var(--accent);
+        }
+
+        .comparison-table tbody td {
+            padding: 1.25rem 1rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .feature-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .comparison-table .highlight-col {
+            background: rgba(16, 185, 129, 0.03);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .yes-mark {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .no-mark {
+            color: #ef4444;
+            font-weight: 700;
+        }
+
+        .partial-mark {
+            color: #eab308;
+            font-weight: 700;
+        }
+
+        .comparison-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .comparison-tagline {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
         }
 
         /* Pricing */
@@ -857,6 +952,7 @@
             <a href="/how-it-works.html">How it Works</a>
             <a href="/pricing.html">Pricing</a>
             <a href="/about.html">About</a>
+            <a href="/faqs.html">FAQs</a>
             <a href="https://app.fllawyer.ai/login">Sign In</a>
         </div>
         <a href="https://app.fllawyer.ai/signup" class="nav-cta">Get Started</a>
@@ -887,14 +983,17 @@
             </div>
 
             <div class="hero-ctas">
-                <a href="https://app.fllawyer.ai/signup" class="btn-primary">
+                <a href="/#features" class="btn-secondary">
+                    Explore Features
+                </a>
+                <a href="https://app.fllawyer.ai/signup" class="btn-primary btn-glow">
                     Start Free
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
-                <a href="https://app.fllawyer.ai/login" class="btn-secondary">
-                    Sign In
+                <a href="/#comparison" class="btn-secondary">
+                    Us vs Competitors
                 </a>
             </div>
         </div>
@@ -1043,6 +1142,78 @@
                 <span>Jurisdiction-specific intelligence</span>
                 <span class="how-value-dot"></span>
                 <span>No hallucinated citations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="comparison" id="comparison">
+        <div class="comparison-inner">
+            <div class="section-header">
+                <p class="section-label">Comparison</p>
+                <h2 class="section-title">Us vs Competitors</h2>
+                <p class="section-subtitle">See how Florida Lawyer stacks up against CoCounsel and Harvey AI</p>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Harvey AI</th>
+                            <th>CoCounsel</th>
+                            <th class="highlight-col">Florida Lawyer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Monthly Cost</td>
+                            <td>$500+/month</td>
+                            <td>$225-400/month</td>
+                            <td class="highlight-col"><strong>$99/month</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Free Tier</td>
+                            <td><span class="no-mark">✗</span> No</td>
+                            <td><span class="no-mark">✗</span> No</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Florida-Specific</td>
+                            <td><span class="no-mark">✗</span> Generic</td>
+                            <td><span class="no-mark">✗</span> Generic</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> Built-in</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Element Detection</td>
+                            <td><span class="no-mark">✗</span> Manual</td>
+                            <td><span class="partial-mark">~</span> Limited</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> Automatic</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Weakness Analysis</td>
+                            <td><span class="no-mark">✗</span> Generic</td>
+                            <td><span class="partial-mark">~</span> Limited</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> Strategic</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Solo-Friendly</td>
+                            <td><span class="no-mark">✗</span> Enterprise</td>
+                            <td><span class="no-mark">✗</span> Enterprise</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="comparison-cta">
+                <p class="comparison-tagline">Half the price of CoCounsel. 1/5 the price of Harvey AI.</p>
+                <a href="https://app.fllawyer.ai/signup" class="btn-primary">
+                    Start Free
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
