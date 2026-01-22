@@ -167,21 +167,24 @@
             max-width: 700px;
         }
 
-        .hero-subtitle {
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            line-height: 1.5;
+        .hero-bullets {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem 2rem;
+            margin-bottom: 2.5rem;
         }
 
-        .badge {
-            display: inline-block;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+        .hero-bullet {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .hero-bullet svg {
             color: var(--accent);
-            margin-bottom: 1.5rem;
-            font-weight: 600;
         }
 
         h1 {
@@ -201,27 +204,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-        }
-
-        .hero-bullets {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem 2rem;
-            margin-bottom: 2.5rem;
-            animation: fadeInUp 0.6s ease 0.2s both;
-        }
-
-        .hero-bullet {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-            color: var(--text-secondary);
-        }
-
-        .hero-bullet svg {
-            color: var(--accent);
         }
 
         .hero-ctas {
@@ -883,13 +865,26 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="badge">Florida Legal AI</div>
-
             <h1><span class="h1-line1">AI Built for Florida by</span><span class="h1-line2"><span class="gradient-text">Florida Lawyers</span></span></h1>
 
-            <p class="hero-subtitle">
-                Find missing elements in complaints. Generate court-ready responses. Built by 17x Super Lawyer Mark Osherow. $99/mo with free tier.
-            </p>
+            <div class="hero-bullets">
+                <div class="hero-bullet">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Find missing elements
+                </div>
+                <div class="hero-bullet">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Generate court-ready docs
+                </div>
+                <div class="hero-bullet">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Built by 17x Super Lawyer
+                </div>
+                <div class="hero-bullet">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    $99/mo · Free tier
+                </div>
+            </div>
 
             <div class="hero-ctas">
                 <a href="https://app.fllawyer.ai/signup" class="btn-primary">
