@@ -710,7 +710,7 @@
             text-align: center;
             padding: 1.5rem 2rem;
             background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            border: 1px solid var(--accent);
             border-radius: 12px;
             margin-top: 1.5rem;
             display: flex;
@@ -1269,7 +1269,7 @@
                 <div class="toggle" id="billingToggle">
                     <div class="toggle-knob"></div>
                 </div>
-                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 25%</span></span>
+                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 2 months</span></span>
             </div>
             
             <div class="pricing-cards">
@@ -1427,9 +1427,9 @@
             toggle.classList.toggle('yearly', isYearly);
 
             if (isYearly) {
-                corePriceEl.textContent = '$112';
+                corePriceEl.textContent = '$124';
                 corePeriodEl.textContent = '/month, billed yearly';
-                superPriceEl.textContent = '$187';
+                superPriceEl.textContent = '$208';
                 superPeriodEl.textContent = '/month, billed yearly';
                 monthlyLabel.classList.remove('active');
                 yearlyLabel.classList.add('active');
