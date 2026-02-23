@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | Florida Lawyer AI - Transparent Pricing for Florida Attorneys</title>
-    <meta name="description" content="Florida Lawyer AI pricing: Start free with 1 matter and 5 document analyses. Upgrade to Pro for unlimited access at $99/month. Built for Florida solo practitioners.">
+    <meta name="description" content="Florida Lawyer AI pricing: Start free with 1 matter. Core plan $149/month with 50 uploads and 30 generations. Super plan $249/month with 200 uploads and 100 generations. Built for Florida solo practitioners.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,8 +221,8 @@
         /* Pricing Cards */
         .pricing-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             margin-bottom: 6rem;
         }
 
@@ -518,7 +518,7 @@
                 <div class="toggle" id="billingToggle">
                     <div class="toggle-knob"></div>
                 </div>
-                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 10%</span></span>
+                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 25%</span></span>
             </div>
 
             <div class="pricing-cards">
@@ -537,32 +537,44 @@
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 document analyses
+                            5 document uploads
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Basic strategic intelligence
+                            3 document generations
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Florida law chat
+                            20 chats/day
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai" class="plan-cta secondary">Try for Free
+                    <a href="https://app.fllawyer.ai" class="plan-cta secondary">Try for Free</a>
                 </div>
 
-                <!-- Pro Plan -->
+                <!-- Core Plan -->
                 <div class="pricing-card featured">
-                    <h3 class="plan-name">Professional</h3>
+                    <h3 class="plan-name">Core</h3>
                     <p class="plan-desc">For practicing attorneys</p>
                     <div class="plan-price">
-                        <span class="price-amount" id="proPrice">$99</span>
-                        <span class="price-period" id="proPeriod">/month</span>
+                        <span class="price-amount" id="corePrice">$149</span>
+                        <span class="price-period" id="corePeriod">/month</span>
                     </div>
                     <ul class="plan-features">
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <strong>Unlimited</strong> matters & documents
+                            <strong>Unlimited</strong> matters
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            50 document uploads/mo
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            30 document generations/mo
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited chat
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -570,27 +582,80 @@
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Generate all document types
+                            Export to Word
+                        </li>
+                    </ul>
+                    <a href="https://app.fllawyer.ai?plan=core" class="plan-cta primary">Try for Free</a>
+                </div>
+
+                <!-- Super Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Super</h3>
+                    <p class="plan-desc">For power users & firms</p>
+                    <div class="plan-price">
+                        <span class="price-amount" id="superPrice">$249</span>
+                        <span class="price-period" id="superPeriod">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <strong>Unlimited</strong> matters
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Strategic chat with case context
+                            200 document uploads/mo
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Cross-document intelligence
+                            100 document generations/mo
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited chat
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full document intelligence
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                             Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai?plan=pro" class="plan-cta primary">Try for Free
+                    <a href="https://app.fllawyer.ai?plan=super" class="plan-cta primary">Try for Free</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <p class="plan-desc">Custom solutions for firms</p>
+                    <div class="plan-price">
+                        <span class="price-amount" style="font-size: 2.5rem;">Custom</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <strong>Unlimited</strong> everything
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Multi-seat pricing
+                        </li>
+                    </ul>
+                    <a href="mailto:support@fllawyer.ai?subject=Enterprise%20Inquiry" class="plan-cta secondary">Contact Us</a>
                 </div>
             </div>
         </section>
 
-<!-- Comparison Table -->
+        <!-- Comparison Table -->
         <section class="comparison-section">
             <h2 class="comparison-title">How We Compare</h2>
             <table class="comparison-table">
@@ -604,38 +669,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Price</td>
-                        <td class="highlight">$99/month</td>
-                        <td>$225-400/month</td>
-                        <td>$500+/month</td>
-                    </tr>
-                    <tr>
                         <td>Florida-Specific</td>
-                        <td class="checkmark">✓ Built-in</td>
+                        <td class="checkmark">&#10003; Built-in</td>
                         <td>Manual research</td>
                         <td>Manual research</td>
                     </tr>
                     <tr>
                         <td>Element Detection</td>
-                        <td class="checkmark">✓ Automatic</td>
+                        <td class="checkmark">&#10003; Automatic</td>
                         <td>Generic</td>
                         <td>Generic</td>
                     </tr>
                     <tr>
                         <td>Weakness Analysis</td>
-                        <td class="checkmark">✓ Built for this</td>
+                        <td class="checkmark">&#10003; Built for this</td>
                         <td>Limited</td>
                         <td>Limited</td>
                     </tr>
                     <tr>
                         <td>Free Tier</td>
-                        <td class="checkmark">✓ Yes</td>
-                        <td class="xmark">✗ No</td>
-                        <td class="xmark">✗ No</td>
+                        <td class="checkmark">&#10003; Yes</td>
+                        <td class="xmark">&#10007; No</td>
+                        <td class="xmark">&#10007; No</td>
                     </tr>
                     <tr>
                         <td>Solo-Friendly</td>
-                        <td class="checkmark">✓ Yes</td>
+                        <td class="checkmark">&#10003; Yes</td>
                         <td>Enterprise focus</td>
                         <td>Enterprise focus</td>
                     </tr>
@@ -658,8 +717,10 @@
     <script>
         // Pricing Toggle
         const toggle = document.getElementById('billingToggle');
-        const priceEl = document.getElementById('proPrice');
-        const periodEl = document.getElementById('proPeriod');
+        const corePriceEl = document.getElementById('corePrice');
+        const corePeriodEl = document.getElementById('corePeriod');
+        const superPriceEl = document.getElementById('superPrice');
+        const superPeriodEl = document.getElementById('superPeriod');
         const monthlyLabel = document.querySelector('[data-period="monthly"]');
         const yearlyLabel = document.querySelector('[data-period="yearly"]');
 
@@ -670,13 +731,17 @@
             toggle.classList.toggle('yearly', isYearly);
 
             if (isYearly) {
-                priceEl.textContent = '$89';
-                periodEl.textContent = '/month, billed yearly';
+                corePriceEl.textContent = '$112';
+                corePeriodEl.textContent = '/month, billed yearly';
+                superPriceEl.textContent = '$187';
+                superPeriodEl.textContent = '/month, billed yearly';
                 monthlyLabel.classList.remove('active');
                 yearlyLabel.classList.add('active');
             } else {
-                priceEl.textContent = '$99';
-                periodEl.textContent = '/month';
+                corePriceEl.textContent = '$149';
+                corePeriodEl.textContent = '/month';
+                superPriceEl.textContent = '$249';
+                superPeriodEl.textContent = '/month';
                 monthlyLabel.classList.add('active');
                 yearlyLabel.classList.remove('active');
             }
