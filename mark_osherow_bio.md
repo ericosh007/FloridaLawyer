@@ -6,7 +6,7 @@
 
 ## The Short Version (For Landing Page/Marketing)
 
-**Mark R. Osherow** is a Florida Bar Board Certified Business Litigation Specialist with over 35 years of courtroom experience. He's been named a Florida Super Lawyer for 17 consecutive years, included in Best Lawyers in America for 10 consecutive years, and selected to America's Top 100 High Stakes Litigators. A past president of the South Palm Beach County Bar Association and member of the Florida Supreme Court's Committee on Standard Jury Instructions, Mark has tried cases in every federal district in Florida and argued before the U.S. Supreme Court. He literally wrote the book on American lawyers—his 2024 publication *Legal Nation: The Rise of the American Lawyer* traces the profession from colonial courts to AI.
+**Mark R. Osherow** is a Florida Bar Board Certified Business Litigation Specialist with over 35 years of courtroom experience. He's been named a Florida Super Lawyer for 20 consecutive years, included in Best Lawyers in America for 10 consecutive years, and selected to America's Top 100 High Stakes Litigators. A past president of the South Palm Beach County Bar Association and member of the Florida Supreme Court's Committee on Standard Jury Instructions, Mark has tried cases in every federal district in Florida and argued before the U.S. Supreme Court. He literally wrote the book on American lawyers—his 2024 publication *Legal Nation: The Rise of the American Lawyer* traces the profession from colonial courts to AI.
 
 ---
 
@@ -22,7 +22,7 @@ With over 35 years of experience practicing in both state and federal courts thr
 
 **Peer Recognition:**
 - **Best Lawyers in America®** — 10 consecutive years (2014–2024), Business Litigation
-- **Florida Super Lawyer** — 17 consecutive years (2007–2024)
+- **Florida Super Lawyer** — 20 consecutive years (2007–2026)
 - **Top 100 Miami Area Super Lawyers** — Multiple years (2017, 2021, 2022)
 - **America's Top 100 High Stakes Litigators®** — 2021, 2022
 - **Florida Legal Elite** — Florida Trend Magazine
@@ -144,13 +144,13 @@ Boca Raton, Florida 33431
 ## Taglines for Marketing Use
 
 **Short (Social/Ads):**
-> "17x Florida Super Lawyer. Board Certified. 35 years in Florida courts."
+> "20x Florida Super Lawyer. Board Certified. 35 years in Florida courts."
 
 **Medium (Landing Page):**
-> "Built with Mark Osherow — Florida Bar Board Certified Business Litigation Specialist, 17x Super Lawyer, Best Lawyers in America, and author of *Legal Nation*."
+> "Built with Mark Osherow — Florida Bar Board Certified Business Litigation Specialist, 20x Super Lawyer, Best Lawyers in America, and author of *Legal Nation*."
 
 **Long (About Page):**
-> "Mark R. Osherow has spent 35 years mastering Florida litigation. Board Certified in Business Litigation since 2006, named a Florida Super Lawyer 17 consecutive years, and included in Best Lawyers in America for a decade straight. He's chaired the Florida Bar's Business Litigation Certification Committee, served on the Florida Supreme Court's Standard Jury Instructions Committee, and tried cases in every federal district in Florida. When we built Florida Lawyer AI, we built it with Mark."
+> "Mark R. Osherow has spent 35 years mastering Florida litigation. Board Certified in Business Litigation since 2006, named a Florida Super Lawyer 20 consecutive years, and included in Best Lawyers in America for a decade straight. He's chaired the Florida Bar's Business Litigation Certification Committee, served on the Florida Supreme Court's Standard Jury Instructions Committee, and tried cases in every federal district in Florida. When we built Florida Lawyer AI, we built it with Mark."
 
 ---
 
@@ -160,7 +160,7 @@ Boca Raton, Florida 33431
 |------------|--------|
 | Board Certified | Business Litigation, Florida Bar (Since 2006) |
 | Years of Experience | 35+ |
-| Super Lawyer | 17 consecutive years |
+| Super Lawyer | 20 consecutive years |
 | Best Lawyers in America | 10 consecutive years |
 | Top 100 High Stakes Litigators | 2021, 2022 |
 | Martindale-Hubbell Rating | AV Preeminent |
