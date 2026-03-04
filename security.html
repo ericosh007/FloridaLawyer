@@ -104,19 +104,34 @@
         }
 
         .nav-cta {
-            background: var(--text-primary);
-            color: var(--bg-primary);
+            color: var(--text-secondary);
             padding: 0.6rem 1.25rem;
             border-radius: 8px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.2s;
         }
 
         .nav-cta:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta-primary {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+
+        .nav-cta-primary:hover {
             background: var(--accent);
             color: #000;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .mobile-only {
+            display: none;
         }
 
         /* Hamburger menu */
@@ -436,8 +451,12 @@
                 order: 2;
             }
 
-            .nav-cta {
+            .nav-cta, .nav-cta-primary {
                 display: none;
+            }
+
+            .mobile-only {
+                display: block;
             }
 
             .nav-links {
@@ -502,10 +521,11 @@
             <a href="/security.html">Security</a>
             <a href="/about.html">About</a>
             <a href="/faqs.html">FAQs</a>
-            <a href="https://app.fllawyer.ai">Sign In</a>
-            <a href="https://app.fllawyer.ai" style="color: var(--accent); font-weight: 600;">Try for Free</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only">Sign In</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Try for Free</a>
         </div>
-        <a href="https://app.fllawyer.ai" class="nav-cta">Try for Free</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta">Sign In</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Try for Free</a>
     </nav>
 
     <!-- Main Content -->
@@ -527,10 +547,10 @@
                         <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
                     </svg>
                 </div>
-                <h2>Enterprise API vs. Consumer Chatbots</h2>
-                <p>This is the most important thing to understand: <strong>Florida Lawyer AI uses Anthropic's commercial API, not consumer ChatGPT or Claude.</strong></p>
-                <p>When you type into ChatGPT or Claude.ai as a consumer, those platforms may review and use your conversations for training. That's what got attorneys in trouble in <em>United States v. Heppner</em>.</p>
-                <p>Our setup is fundamentally different. We connect to Anthropic's enterprise API under commercial terms that explicitly prohibit using your inputs or outputs for AI training.</p>
+                <h2>Every Legal Tool Uses AI. How You Use It Matters.</h2>
+                <p>Most AI tools run on consumer chatbots — the same ones you'd use from your couch. <strong>Florida Lawyer AI is built on a commercial enterprise API</strong> (Anthropic's Claude), not consumer ChatGPT or Claude.ai.</p>
+                <p>When attorneys type into consumer AI platforms, those platforms may review and use conversations for training. That's what got attorneys in trouble in <em>United States v. Heppner</em>.</p>
+                <p>Our setup is fundamentally different. We connect through Anthropic's commercial API under terms that explicitly prohibit using your inputs or outputs for AI training.</p>
 
                 <div class="case-callout">
                     <p class="case-callout-label">The Heppner Warning</p>

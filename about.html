@@ -104,19 +104,34 @@
         }
 
         .nav-cta {
-            background: var(--text-primary);
-            color: var(--bg-primary);
+            color: var(--text-secondary);
             padding: 0.6rem 1.25rem;
             border-radius: 8px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.2s ease;
         }
 
         .nav-cta:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta-primary {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+
+        .nav-cta-primary:hover {
+            background: var(--accent);
+            color: #000;
             transform: translateY(-1px);
             box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .mobile-only {
+            display: none;
         }
 
         /* Hamburger menu */
@@ -498,8 +513,12 @@
                 order: 2;
             }
 
-            .nav-cta {
+            .nav-cta, .nav-cta-primary {
                 display: none;
+            }
+
+            .mobile-only {
+                display: block;
             }
 
             .nav-links {
@@ -561,10 +580,11 @@
             <a href="/security.html">Security</a>
             <a href="/about.html">About</a>
             <a href="/faqs.html">FAQs</a>
-            <a href="https://app.fllawyer.ai">Sign In</a>
-            <a href="https://app.fllawyer.ai" style="color: var(--accent); font-weight: 600;">Try for Free</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only">Sign In</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Try for Free</a>
         </div>
-        <a href="https://app.fllawyer.ai" class="nav-cta">Try for Free</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta">Sign In</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Try for Free</a>
     </nav>
 
     <!-- Main Content -->
