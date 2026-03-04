@@ -119,6 +119,20 @@
             box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
         }
 
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            color: var(--text-primary);
+        }
+
+        .hamburger svg {
+            display: block;
+        }
+
         /* Main Content */
         main {
             padding-top: 5rem;
@@ -476,10 +490,41 @@
         @media (max-width: 768px) {
             nav {
                 padding: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hamburger {
+                display: block;
+                order: 2;
+            }
+
+            .nav-cta {
+                display: none;
             }
 
             .nav-links {
                 display: none;
+                width: 100%;
+                order: 3;
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem 0 0.5rem;
+                border-top: 1px solid var(--border);
+                margin-top: 1rem;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 0.75rem 0;
+                font-size: 1rem;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none;
             }
 
             .credentials-grid {
@@ -506,6 +551,9 @@
             </div>
             Florida Lawyer
         </a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
         <div class="nav-links">
             <a href="/#features">Features</a>
             <a href="/how-it-works.html">How it Works</a>
@@ -514,6 +562,7 @@
             <a href="/about.html">About</a>
             <a href="/faqs.html">FAQs</a>
             <a href="https://app.fllawyer.ai">Sign In</a>
+            <a href="https://app.fllawyer.ai" style="color: var(--accent); font-weight: 600;">Try for Free</a>
         </div>
         <a href="https://app.fllawyer.ai" class="nav-cta">Try for Free</a>
     </nav>
