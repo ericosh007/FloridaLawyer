@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | Florida Lawyer AI - Transparent Pricing for Florida Attorneys</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1117'/><text x='32' y='44' font-family='Inter,system-ui,sans-serif' font-size='32' font-weight='700' fill='%2310b981' text-anchor='middle'>FL</text></svg>">
-    <meta name="description" content="Florida Lawyer AI pricing: Start free with 1 matter. Core plan $149/month with 50 uploads and 30 generations. Super plan $249/month with 200 uploads and 100 generations. Built for Florida solo practitioners.">
+    <meta name="description" content="Florida Lawyer AI pricing: Base $49/month, Core $149/month, Super $249/month. Every plan starts with a 7-day free trial. Built for Florida solo practitioners and small firms.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -605,10 +605,10 @@
             <a href="/about.html">About</a>
             <a href="/faqs.html">FAQs</a>
             <a href="https://app.fllawyer.ai" class="mobile-only">Sign In</a>
-            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Try for Free</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Start Free Trial</a>
         </div>
         <a href="https://app.fllawyer.ai" class="nav-cta">Sign In</a>
-        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Try for Free</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Start Free Trial</a>
     </nav>
 
     <!-- Main Content -->
@@ -619,6 +619,7 @@
                 <p class="section-label">Pricing</p>
                 <h1 class="section-title">Simple, Transparent Pricing</h1>
                 <p class="section-subtitle">Built for Florida solo practitioners and small firms</p>
+                <p class="section-subtitle" style="margin-top: 8px; font-size: 0.95rem; opacity: 0.85;">Every plan starts with a <strong>7-day free trial</strong>. A card is required to start — cancel anytime before day 7 and you won't be charged.</p>
             </div>
 
             <div class="toggle-container">
@@ -630,33 +631,41 @@
             </div>
 
             <div class="pricing-cards">
-                <!-- Free Plan -->
+                <!-- Base Plan -->
                 <div class="pricing-card">
-                    <h3 class="plan-name">Free</h3>
-                    <p class="plan-desc">Try it on your next case</p>
+                    <h3 class="plan-name">Base</h3>
+                    <p class="plan-desc">For solos getting started</p>
                     <div class="plan-price">
-                        <span class="price-amount">$0</span>
-                        <span class="price-period">/month</span>
+                        <span class="price-amount" id="basePrice">$49</span>
+                        <span class="price-period" id="basePeriod">/month</span>
                     </div>
                     <ul class="plan-features">
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            1 active matter
+                            5 active matters
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            5 document uploads
+                            25 document uploads/mo
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 document generations
+                            15 document generations/mo
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            20 chats/day
+                            Unlimited chat
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full document intelligence
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai" class="plan-cta secondary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=base" class="plan-cta secondary">Start Free Trial</a>
                 </div>
 
                 <!-- Core Plan -->
@@ -693,7 +702,7 @@
                             Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai?plan=core" class="plan-cta primary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=core" class="plan-cta primary">Start Free Trial</a>
                 </div>
 
                 <!-- Super Plan -->
@@ -730,7 +739,7 @@
                             Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai?plan=super" class="plan-cta primary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=super" class="plan-cta primary">Start Free Trial</a>
                 </div>
 
             </div>
@@ -773,10 +782,16 @@
                         <td>Limited</td>
                     </tr>
                     <tr>
-                        <td>Free Tier</td>
+                        <td>7-Day Free Trial</td>
                         <td class="checkmark">&#10003; Yes</td>
                         <td class="xmark">&#10007; No</td>
                         <td class="xmark">&#10007; No</td>
+                    </tr>
+                    <tr>
+                        <td>Starts at</td>
+                        <td class="checkmark">&#10003; $49/mo</td>
+                        <td>Enterprise quote</td>
+                        <td>Enterprise quote</td>
                     </tr>
                     <tr>
                         <td>Solo-Friendly</td>
@@ -804,6 +819,8 @@
     <script>
         // Pricing Toggle
         const toggle = document.getElementById('billingToggle');
+        const basePriceEl = document.getElementById('basePrice');
+        const basePeriodEl = document.getElementById('basePeriod');
         const corePriceEl = document.getElementById('corePrice');
         const corePeriodEl = document.getElementById('corePeriod');
         const superPriceEl = document.getElementById('superPrice');
@@ -818,6 +835,7 @@
             toggle.classList.toggle('yearly', isYearly);
 
             if (isYearly) {
+                if (basePriceEl) { basePriceEl.textContent = '$41'; basePeriodEl.textContent = '/month, billed yearly'; }
                 corePriceEl.textContent = '$124';
                 corePeriodEl.textContent = '/month, billed yearly';
                 superPriceEl.textContent = '$208';
@@ -825,6 +843,7 @@
                 monthlyLabel.classList.remove('active');
                 yearlyLabel.classList.add('active');
             } else {
+                if (basePriceEl) { basePriceEl.textContent = '$49'; basePeriodEl.textContent = '/month'; }
                 corePriceEl.textContent = '$149';
                 corePeriodEl.textContent = '/month';
                 superPriceEl.textContent = '$249';

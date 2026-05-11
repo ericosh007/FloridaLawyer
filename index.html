@@ -1133,10 +1133,10 @@
             <a href="/about.html">About</a>
             <a href="/faqs.html">FAQs</a>
             <a href="https://app.fllawyer.ai" class="mobile-only">Sign In</a>
-            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Try for Free</a>
+            <a href="https://app.fllawyer.ai" class="mobile-only" style="color: var(--accent); font-weight: 600;">Start Free Trial</a>
         </div>
         <a href="https://app.fllawyer.ai" class="nav-cta">Sign In</a>
-        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Try for Free</a>
+        <a href="https://app.fllawyer.ai" class="nav-cta nav-cta-primary">Start Free Trial</a>
     </nav>
 
     <!-- Hero -->
@@ -1159,7 +1159,7 @@
                 </div>
                 <div class="hero-bullet">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                    From $149/mo · Free tier
+                    From $49/mo · 7-day free trial
                 </div>
             </div>
 
@@ -1168,7 +1168,7 @@
                     Explore Features
                 </a>
                 <a href="https://app.fllawyer.ai" class="btn-primary btn-glow">
-                    Try for Free
+                    Start Free Trial
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -1348,10 +1348,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="feature-name">Free Tier</td>
+                            <td class="feature-name">7-Day Free Trial</td>
                             <td><span class="no-mark">✗</span> No</td>
                             <td><span class="no-mark">✗</span> No</td>
                             <td class="highlight-col"><span class="yes-mark">✓</span> Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Starts at</td>
+                            <td><span class="no-mark">✗</span> Enterprise</td>
+                            <td><span class="no-mark">✗</span> Enterprise</td>
+                            <td class="highlight-col"><span class="yes-mark">✓</span> $49/mo</td>
                         </tr>
                         <tr>
                             <td class="feature-name">Florida-Specific</td>
@@ -1384,7 +1390,7 @@
             <div class="comparison-cta">
                 <p class="comparison-tagline">Built specifically for Florida solo practitioners and small firms.</p>
                 <a href="https://app.fllawyer.ai" class="btn-primary">
-                    Try for Free
+                    Start Free Trial
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -1398,9 +1404,10 @@
         <div class="pricing-inner">
             <div class="section-header">
                 <p class="section-label">Pricing</p>
-                <h2 class="section-title">Start free. Upgrade when ready.</h2>
+                <h2 class="section-title">Start with a 7-day free trial.</h2>
+                <p class="section-subtitle" style="margin-top: 8px; font-size: 0.95rem; opacity: 0.85;">Every plan includes a 7-day free trial. Card required to start — cancel anytime before day 7 and you won't be charged.</p>
             </div>
-            
+
             <div class="toggle-container">
                 <span class="toggle-label active" data-period="monthly">Monthly</span>
                 <div class="toggle" id="billingToggle">
@@ -1408,35 +1415,43 @@
                 </div>
                 <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 2 months</span></span>
             </div>
-            
+
             <div class="pricing-cards">
-                <!-- Free Plan -->
+                <!-- Base Plan -->
                 <div class="pricing-card">
-                    <h3 class="plan-name">Free</h3>
-                    <p class="plan-desc">Try it on your next case</p>
+                    <h3 class="plan-name">Base</h3>
+                    <p class="plan-desc">For solos getting started</p>
                     <div class="plan-price">
-                        <span class="price-amount">$0</span>
-                        <span class="price-period">/month</span>
+                        <span class="price-amount" id="basePrice">$49</span>
+                        <span class="price-period" id="basePeriod">/month</span>
                     </div>
                     <ul class="plan-features">
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            1 active matter
+                            5 active matters
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            5 document uploads
+                            25 document uploads/mo
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 document generations
+                            15 document generations/mo
                         </li>
                         <li>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            20 chats/day
+                            Unlimited chat
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full document intelligence
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai" class="plan-cta secondary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=base" class="plan-cta secondary">Start Free Trial</a>
                 </div>
 
                 <!-- Core Plan -->
@@ -1473,7 +1488,7 @@
                             Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai?plan=core" class="plan-cta primary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=core" class="plan-cta primary">Start Free Trial</a>
                 </div>
 
                 <!-- Super Plan -->
@@ -1510,7 +1525,7 @@
                             Export to Word
                         </li>
                     </ul>
-                    <a href="https://app.fllawyer.ai?plan=super" class="plan-cta primary">Try for Free</a>
+                    <a href="https://app.fllawyer.ai?plan=super" class="plan-cta primary">Start Free Trial</a>
                 </div>
 
             </div>
@@ -1585,7 +1600,7 @@
             <h2>Ready to work smarter?</h2>
             <p>Join Florida attorneys who are saving hours on every case.</p>
             <a href="https://app.fllawyer.ai" class="btn-primary">
-                Try for Free
+                Start Free Trial
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -1608,6 +1623,8 @@
     <script>
         // Pricing Toggle
         const toggle = document.getElementById('billingToggle');
+        const basePriceEl = document.getElementById('basePrice');
+        const basePeriodEl = document.getElementById('basePeriod');
         const corePriceEl = document.getElementById('corePrice');
         const corePeriodEl = document.getElementById('corePeriod');
         const superPriceEl = document.getElementById('superPrice');
@@ -1622,6 +1639,7 @@
             toggle.classList.toggle('yearly', isYearly);
 
             if (isYearly) {
+                if (basePriceEl) { basePriceEl.textContent = '$41'; basePeriodEl.textContent = '/month, billed yearly'; }
                 corePriceEl.textContent = '$124';
                 corePeriodEl.textContent = '/month, billed yearly';
                 superPriceEl.textContent = '$208';
@@ -1629,6 +1647,7 @@
                 monthlyLabel.classList.remove('active');
                 yearlyLabel.classList.add('active');
             } else {
+                if (basePriceEl) { basePriceEl.textContent = '$49'; basePeriodEl.textContent = '/month'; }
                 corePriceEl.textContent = '$149';
                 corePeriodEl.textContent = '/month';
                 superPriceEl.textContent = '$249';
